@@ -357,6 +357,53 @@ footer{
     }
 
 }
+.video-card{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/9;
+    margin-top:18px;
+    border-radius:12px;
+    overflow:hidden;
+    cursor:pointer;
+    background:#05070a;
+    border:1px solid #25313d;
+}
+
+.video-card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    transition:transform .3s ease;
+}
+
+.video-card:hover img{
+    transform:scale(1.04);
+}
+
+.play-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    background:#18d9ff;
+    color:#031017;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:25px;
+    padding-left:4px;
+    box-shadow:0 0 30px rgba(24,217,255,.35);
+}
+
+.video-card iframe{
+    width:100%;
+    height:100%;
+    border:0;
+}
 
 </style>
 </head>
@@ -577,7 +624,6 @@ across Afrobeat, Afrogospel, R&B and Afro-swing.
 
 </section>
 
-
 <section id="work">
 
 <div class="container">
@@ -587,11 +633,15 @@ Selected Work
 </h2>
 
 <p class="section-intro">
-Listen to selected productions and releases.
+A selection of projects where I handled the complete audio-production
+process — from recording and vocal production to mixing and mastering.
 </p>
+
 
 <div class="projects">
 
+
+<!-- 01 -->
 
 <article class="project">
 
@@ -604,27 +654,33 @@ Delex TZ — Don't Give Up
 </h3>
 
 <p>
-Audio Production / Engineering
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
 </p>
 
-<div class="player">
+<div class="video-card"
+onclick="loadVideo(this,'buPCNgOiSLg')">
 
-<iframe
-src="https://www.youtube.com/embed/buPCNgOiSLg"
-title="Delex TZ - Don't Give Up"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<img
+src="https://img.youtube.com/vi/buPCNgOiSLg/hqdefault.jpg"
+alt="Delex TZ - Don't Give Up">
+
+<div class="play-button">
+▶
+</div>
 
 </div>
 
 <a href="https://youtu.be/buPCNgOiSLg"
 target="_blank">
-Open on YouTube ↗
+
+Listen on YouTube ↗
+
 </a>
 
 </article>
 
+
+<!-- 02 -->
 
 <article class="project">
 
@@ -637,27 +693,33 @@ Blaq Falconz — Zanzibar
 </h3>
 
 <p>
-Audio Production / Engineering
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
 </p>
 
-<div class="player">
+<div class="video-card"
+onclick="loadVideo(this,'ZWWqUkt3Kn4')">
 
-<iframe
-src="https://www.youtube.com/embed/ZWWqUkt3Kn4"
-title="Blaq Falconz - Zanzibar"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<img
+src="https://img.youtube.com/vi/ZWWqUkt3Kn4/hqdefault.jpg"
+alt="Blaq Falconz - Zanzibar">
+
+<div class="play-button">
+▶
+</div>
 
 </div>
 
 <a href="https://youtu.be/ZWWqUkt3Kn4"
 target="_blank">
-Open on YouTube ↗
+
+Listen on YouTube ↗
+
 </a>
 
 </article>
 
+
+<!-- 03 -->
 
 <article class="project">
 
@@ -670,27 +732,33 @@ Dentrozone ft Mon B — Siko Sawa
 </h3>
 
 <p>
-Audio Production / Engineering
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
 </p>
 
-<div class="player">
+<div class="video-card"
+onclick="loadVideo(this,'96cFPpWfIZI')">
 
-<iframe
-src="https://www.youtube.com/embed/96cFPpWfIZI"
-title="Dentrozone ft Mon B - Siko Sawa"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<img
+src="https://img.youtube.com/vi/96cFPpWfIZI/hqdefault.jpg"
+alt="Dentrozone ft Mon B - Siko Sawa">
+
+<div class="play-button">
+▶
+</div>
 
 </div>
 
 <a href="https://youtu.be/96cFPpWfIZI"
 target="_blank">
-Open on YouTube ↗
+
+Listen on YouTube ↗
+
 </a>
 
 </article>
 
+
+<!-- 04 -->
 
 <article class="project">
 
@@ -703,23 +771,378 @@ Ryden Pol — Go
 </h3>
 
 <p>
-Audio Production / Engineering
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
 </p>
 
-<div class="player">
+<div class="video-card"
+onclick="loadVideo(this,'6kQDyqlq0Ek')">
 
-<iframe
-src="https://www.youtube.com/embed/6kQDyqlq0Ek"
-title="Ryden Pol - Go"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<img
+src="https://img.youtube.com/vi/6kQDyqlq0Ek/hqdefault.jpg"
+alt="Ryden Pol - Go">
+
+<div class="play-button">
+▶
+</div>
 
 </div>
 
 <a href="https://youtu.be/6kQDyqlq0Ek"
 target="_blank">
-Open on YouTube ↗
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 05 -->
+
+<article class="project">
+
+<div class="project-number">
+05 / FEATURED WORK
+</div>
+
+<h3>
+Blaq Falconz — Blessing
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'Xb4ZPZnEiSw')">
+
+<img
+src="https://img.youtube.com/vi/Xb4ZPZnEiSw/hqdefault.jpg"
+alt="Blaq Falconz - Blessing">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/Xb4ZPZnEiSw"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 06 -->
+
+<article class="project">
+
+<div class="project-number">
+06 / FEATURED WORK
+</div>
+
+<h3>
+Kamziz99 — Mizuka
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'Urlk3kZ3C_U')">
+
+<img
+src="https://img.youtube.com/vi/Urlk3kZ3C_U/hqdefault.jpg"
+alt="Kamziz99 - Mizuka">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/Urlk3kZ3C_U"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 07 -->
+
+<article class="project">
+
+<div class="project-number">
+07 / MORE WORK
+</div>
+
+<h3>
+Minase ft Delex TZ — It's Okay
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'ewBEefRf648')">
+
+<img
+src="https://img.youtube.com/vi/ewBEefRf648/hqdefault.jpg"
+alt="Minase ft Delex TZ - It's Okay">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/ewBEefRf648"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 08 -->
+
+<article class="project">
+
+<div class="project-number">
+08 / MORE WORK
+</div>
+
+<h3>
+Ludaah ft Neyzar — Medicine
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'N3ImhaKP1FY')">
+
+<img
+src="https://img.youtube.com/vi/N3ImhaKP1FY/hqdefault.jpg"
+alt="Ludaah ft Neyzar - Medicine">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/N3ImhaKP1FY"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 09 -->
+
+<article class="project">
+
+<div class="project-number">
+09 / MORE WORK
+</div>
+
+<h3>
+Blaq Falconz — Down Low
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'9j8niFD5Zek')">
+
+<img
+src="https://img.youtube.com/vi/9j8niFD5Zek/hqdefault.jpg"
+alt="Blaq Falconz - Down Low">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/9j8niFD5Zek"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 10 -->
+
+<article class="project">
+
+<div class="project-number">
+10 / MORE WORK
+</div>
+
+<h3>
+Mr Nobody — People Change
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'o9O180Fd11U')">
+
+<img
+src="https://img.youtube.com/vi/o9O180Fd11U/hqdefault.jpg"
+alt="Mr Nobody - People Change">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/o9O180Fd11U"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 11 -->
+
+<article class="project">
+
+<div class="project-number">
+11 / MORE WORK
+</div>
+
+<h3>
+Taker_1ne ft Prismwave — Forever
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'OmEugIw1LR0')">
+
+<img
+src="https://img.youtube.com/vi/OmEugIw1LR0/hqdefault.jpg"
+alt="Taker_1ne ft Prismwave - Forever">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/OmEugIw1LR0"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 12 -->
+
+<article class="project">
+
+<div class="project-number">
+12 / MORE WORK
+</div>
+
+<h3>
+Timotheo Kapenda — Milele
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'Zyu9y4JpMJ4')">
+
+<img
+src="https://img.youtube.com/vi/Zyu9y4JpMJ4/hqdefault.jpg"
+alt="Timotheo Kapenda - Milele">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/Zyu9y4JpMJ4"
+target="_blank">
+
+Listen on YouTube ↗
+
+</a>
+
+</article>
+
+
+<!-- 13 -->
+
+<article class="project">
+
+<div class="project-number">
+13 / MORE WORK
+</div>
+
+<h3>
+BIG C — Maisha ya Ukweli
+</h3>
+
+<p>
+Full Audio Production • Recording • Vocal Production • Editing • Mixing • Mastering
+</p>
+
+<div class="video-card"
+onclick="loadVideo(this,'baLjhBL7_S4')">
+
+<img
+src="https://img.youtube.com/vi/baLjhBL7_S4/hqdefault.jpg"
+alt="BIG C - Maisha ya Ukweli">
+
+<div class="play-button">
+▶
+</div>
+
+</div>
+
+<a href="https://youtu.be/baLjhBL7_S4"
+target="_blank">
+
+Listen on YouTube ↗
+
 </a>
 
 </article>
@@ -730,6 +1153,7 @@ Open on YouTube ↗
 </div>
 
 </section>
+
 
 
 <section class="contact" id="contact">
@@ -789,6 +1213,23 @@ Instagram
 © 2026 RWEYE BEATZ. All rights reserved.
 
 </footer>
+
+    <script>
+
+function loadVideo(card, videoId){
+
+    card.innerHTML = `
+        <iframe
+        src="https://www.youtube.com/embed/${videoId}?autoplay=1"
+        title="RWEYE BEATZ audio project"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+        </iframe>
+    `;
+
+}
+
+    </script>
 
 </body>
 </html>
